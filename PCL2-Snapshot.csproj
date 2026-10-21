@@ -1,0 +1,285 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Plain Craft Launcher 2</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Remove="PCL\Application.xaml" />
+    <ApplicationDefinition Include="PCL\Application.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="application.xaml" />
+    <Page Remove="PCL\FormMain.xaml" />
+    <Page Remove="PCL\MyButton.xaml" />
+    <Page Remove="PCL\MyCheckBox.xaml" />
+    <Page Remove="PCL\MyExtraButton.xaml" />
+    <Page Remove="PCL\MyExtraTextButton.xaml" />
+    <Page Remove="PCL\MyHint.xaml" />
+    <Page Remove="PCL\MyIconButton.xaml" />
+    <Page Remove="PCL\MyIconTextButton.xaml" />
+    <Page Remove="PCL\MyListItem.xaml" />
+    <Page Remove="PCL\MyLoading.xaml" />
+    <Page Remove="PCL\MyLocalModItem.xaml" />
+    <Page Remove="PCL\MyMsgInput.xaml" />
+    <Page Remove="PCL\MyMsgLogin.xaml" />
+    <Page Remove="PCL\MyMsgSelect.xaml" />
+    <Page Remove="PCL\MyMsgText.xaml" />
+    <Page Remove="PCL\MyRadioBox.xaml" />
+    <Page Remove="PCL\MyRadioButton.xaml" />
+    <Page Remove="PCL\MyResourceItem.xaml" />
+    <Page Remove="PCL\MySearchBox.xaml" />
+    <Page Remove="PCL\MySkin.xaml" />
+    <Page Remove="PCL\MySlider.xaml" />
+    <Page Remove="PCL\PageDownloadDataPack.xaml" />
+    <Page Remove="PCL\PageDownloadInstall.xaml" />
+    <Page Remove="PCL\PageDownloadLeft.xaml" />
+    <Page Remove="PCL\PageDownloadMod.xaml" />
+    <Page Remove="PCL\PageDownloadPack.xaml" />
+    <Page Remove="PCL\PageDownloadResourceDetail.xaml" />
+    <Page Remove="PCL\PageDownloadResourcePack.xaml" />
+    <Page Remove="PCL\PageDownloadShader.xaml" />
+    <Page Remove="PCL\PageInstanceExport.xaml" />
+    <Page Remove="PCL\PageInstanceLeft.xaml" />
+    <Page Remove="PCL\PageInstanceMod.xaml" />
+    <Page Remove="PCL\PageInstanceModDisabled.xaml" />
+    <Page Remove="PCL\PageInstanceOverall.xaml" />
+    <Page Remove="PCL\PageInstanceSetup.xaml" />
+    <Page Remove="PCL\PageLaunchLeft.xaml" />
+    <Page Remove="PCL\PageLaunchRight.xaml" />
+    <Page Remove="PCL\PageLinkMain.xaml" />
+    <Page Remove="PCL\PageLoginAuth.xaml" />
+    <Page Remove="PCL\PageLoginAuthSkin.xaml" />
+    <Page Remove="PCL\PageLoginLegacy.xaml" />
+    <Page Remove="PCL\PageLoginMs.xaml" />
+    <Page Remove="PCL\PageLoginMsSkin.xaml" />
+    <Page Remove="PCL\PageLoginNide.xaml" />
+    <Page Remove="PCL\PageLoginNideSkin.xaml" />
+    <Page Remove="PCL\PageOtherAbout.xaml" />
+    <Page Remove="PCL\PageOtherHelp.xaml" />
+    <Page Remove="PCL\PageOtherHelpDetail.xaml" />
+    <Page Remove="PCL\PageOtherLeft.xaml" />
+    <Page Remove="PCL\PageOtherTest.xaml" />
+    <Page Remove="PCL\PageResource.xaml" />
+    <Page Remove="PCL\PageSelectLeft.xaml" />
+    <Page Remove="PCL\PageSelectRight.xaml" />
+    <Page Remove="PCL\PageSetupLaunch.xaml" />
+    <Page Remove="PCL\PageSetupLeft.xaml" />
+    <Page Remove="PCL\PageSetupLink.xaml" />
+    <Page Remove="PCL\PageSetupSystem.xaml" />
+    <Page Remove="PCL\PageSetupUI.xaml" />
+    <Page Remove="PCL\PageSpeedLeft.xaml" />
+    <Page Remove="PCL\PageSpeedRight.xaml" />
+    <Page Include="PCL\FormMain.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="formmain.xaml" />
+    <Page Include="PCL\MyButton.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="controls/mybutton.xaml" />
+    <Page Include="PCL\MyCheckBox.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="controls/mycheckbox.xaml" />
+    <Page Include="PCL\MyExtraButton.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="controls/myextrabutton.xaml" />
+    <Page Include="PCL\MyExtraTextButton.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="controls/myextratextbutton.xaml" />
+    <Page Include="PCL\MyHint.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="controls/myhint.xaml" />
+    <Page Include="PCL\MyIconButton.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="controls/myiconbutton.xaml" />
+    <Page Include="PCL\MyIconTextButton.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="controls/myicontextbutton.xaml" />
+    <Page Include="PCL\MyListItem.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="controls/mylistitem.xaml" />
+    <Page Include="PCL\MyLoading.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="controls/myloading.xaml" />
+    <Page Include="PCL\MyLocalModItem.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pageinstance/mylocalmoditem.xaml" />
+    <Page Include="PCL\MyMsgInput.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="controls/mymsg/mymsginput.xaml" />
+    <Page Include="PCL\MyMsgLogin.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagelaunch/mymsglogin.xaml" />
+    <Page Include="PCL\MyMsgSelect.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="controls/mymsg/mymsgselect.xaml" />
+    <Page Include="PCL\MyMsgText.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="controls/mymsg/mymsgtext.xaml" />
+    <Page Include="PCL\MyRadioBox.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="controls/myradiobox.xaml" />
+    <Page Include="PCL\MyRadioButton.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="controls/myradiobutton.xaml" />
+    <Page Include="PCL\MyResourceItem.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagedownload/resource/myresourceitem.xaml" />
+    <Page Include="PCL\MySearchBox.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="controls/mysearchbox.xaml" />
+    <Page Include="PCL\MySkin.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagelaunch/myskin.xaml" />
+    <Page Include="PCL\MySlider.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="controls/myslider.xaml" />
+    <Page Include="PCL\PageDownloadDataPack.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagedownload/resource/pagedownloaddatapack.xaml" />
+    <Page Include="PCL\PageDownloadInstall.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagedownload/pagedownloadinstall.xaml" />
+    <Page Include="PCL\PageDownloadLeft.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagedownload/pagedownloadleft.xaml" />
+    <Page Include="PCL\PageDownloadMod.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagedownload/resource/pagedownloadmod.xaml" />
+    <Page Include="PCL\PageDownloadPack.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagedownload/resource/pagedownloadpack.xaml" />
+    <Page Include="PCL\PageDownloadResourceDetail.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagedownload/resource/pagedownloadcompdetail.xaml" />
+    <Page Include="PCL\PageDownloadResourcePack.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagedownload/resource/pagedownloadresourcepack.xaml" />
+    <Page Include="PCL\PageDownloadShader.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagedownload/resource/pagedownloadshader.xaml" />
+    <Page Include="PCL\PageInstanceExport.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pageinstance/pageinstanceexport.xaml" />
+    <Page Include="PCL\PageInstanceLeft.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pageinstance/pageinstanceleft.xaml" />
+    <Page Include="PCL\PageInstanceMod.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pageinstance/pageinstancemod.xaml" />
+    <Page Include="PCL\PageInstanceModDisabled.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pageinstance/pageinstancemoddisabled.xaml" />
+    <Page Include="PCL\PageInstanceOverall.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pageinstance/pageinstanceoverall.xaml" />
+    <Page Include="PCL\PageInstanceSetup.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pageinstance/pageinstancesetup.xaml" />
+    <Page Include="PCL\PageLaunchLeft.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagelaunch/pagelaunchleft.xaml" />
+    <Page Include="PCL\PageLaunchRight.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagelaunch/pagelaunchright.xaml" />
+    <Page Include="PCL\PageLinkMain.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagelink/pagelinkmain.xaml" />
+    <Page Include="PCL\PageLoginAuth.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagelaunch/pageloginauth.xaml" />
+    <Page Include="PCL\PageLoginAuthSkin.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagelaunch/pageloginauthskin.xaml" />
+    <Page Include="PCL\PageLoginLegacy.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagelaunch/pageloginlegacy.xaml" />
+    <Page Include="PCL\PageLoginMs.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagelaunch/pageloginms.xaml" />
+    <Page Include="PCL\PageLoginMsSkin.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagelaunch/pageloginmsskin.xaml" />
+    <Page Include="PCL\PageLoginNide.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagelaunch/pageloginnide.xaml" />
+    <Page Include="PCL\PageLoginNideSkin.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagelaunch/pageloginnideskin.xaml" />
+    <Page Include="PCL\PageOtherAbout.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pageother/pageotherabout.xaml" />
+    <Page Include="PCL\PageOtherHelp.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pageother/pageotherhelp.xaml" />
+    <Page Include="PCL\PageOtherHelpDetail.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pageother/pageotherhelpdetail.xaml" />
+    <Page Include="PCL\PageOtherLeft.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pageother/pageotherleft.xaml" />
+    <Page Include="PCL\PageOtherTest.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pageother/pageothertest.xaml" />
+    <Page Include="PCL\PageResource.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagedownload/resource/pageresource.xaml" />
+    <Page Include="PCL\PageSelectLeft.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pageselectleft.xaml" />
+    <Page Include="PCL\PageSelectRight.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pageselectright.xaml" />
+    <Page Include="PCL\PageSetupLaunch.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagesetup/pagesetuplaunch.xaml" />
+    <Page Include="PCL\PageSetupLeft.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagesetup/pagesetupleft.xaml" />
+    <Page Include="PCL\PageSetupLink.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagesetup/pagesetuplink.xaml" />
+    <Page Include="PCL\PageSetupSystem.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagesetup/pagesetupsystem.xaml" />
+    <Page Include="PCL\PageSetupUI.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagesetup/pagesetupui.xaml" />
+    <Page Include="PCL\PageSpeedLeft.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagespeedleft.xaml" />
+    <Page Include="PCL\PageSpeedRight.xaml" Generator="MSBuild:Compile" SubType="Designer" LogicalName="pages/pagespeedright.xaml" />
+    <Resource Remove="images\blocks\anvil.png" />
+    <Resource Remove="images\blocks\cobblestone.png" />
+    <Resource Remove="images\blocks\commandblock.png" />
+    <Resource Remove="images\blocks\egg.png" />
+    <Resource Remove="images\blocks\fabric.png" />
+    <Resource Remove="images\blocks\goldblock.png" />
+    <Resource Remove="images\blocks\grass.png" />
+    <Resource Remove="images\blocks\grasspath.png" />
+    <Resource Remove="images\blocks\neoforge.png" />
+    <Resource Remove="images\blocks\optifabric.png" />
+    <Resource Remove="images\blocks\redstoneblock.png" />
+    <Resource Remove="images\blocks\redstonelampoff.png" />
+    <Resource Remove="images\blocks\redstonelampon.png" />
+    <Resource Remove="images\heads\00ll00.png" />
+    <Resource Remove="images\heads\bangbang93.png" />
+    <Resource Remove="images\heads\chongqing.png" />
+    <Resource Remove="images\heads\easytier.png" />
+    <Resource Remove="images\heads\hao_tian.jpg" />
+    <Resource Remove="images\heads\herobrinexia.png" />
+    <Resource Remove="images\heads\logo.png" />
+    <Resource Remove="images\heads\ltcat.jpg" />
+    <Resource Remove="images\heads\mcbbs.png" />
+    <Resource Remove="images\heads\patrick.png" />
+    <Resource Remove="images\heads\pcl2.png" />
+    <Resource Remove="images\heads\wiki.png" />
+    <Resource Remove="images\heads\z0z0r4.png" />
+    <Resource Remove="images\icon.ico" />
+    <Resource Remove="images\icons\disabled.png" />
+    <Resource Remove="images\icons\noicon.png" />
+    <Resource Remove="images\releasetypes\alpha.png" />
+    <Resource Remove="images\releasetypes\beta.png" />
+    <Resource Remove="images\releasetypes\release.png" />
+    <Resource Remove="images\skins\alex.png" />
+    <Resource Remove="images\skins\ari.png" />
+    <Resource Remove="images\skins\efe.png" />
+    <Resource Remove="images\skins\kai.png" />
+    <Resource Remove="images\skins\makena.png" />
+    <Resource Remove="images\skins\noor.png" />
+    <Resource Remove="images\skins\steve.png" />
+    <Resource Remove="images\skins\sunny.png" />
+    <Resource Remove="images\skins\zuri.png" />
+    <Resource Remove="images\themes\10.png" />
+    <Resource Remove="images\themes\11.png" />
+    <Resource Remove="images\themes\12.png" />
+    <Resource Remove="images\themes\13.png" />
+    <Resource Remove="images\themes\42.png" />
+    <Resource Remove="images\themes\5.png" />
+    <Resource Remove="images\themes\6.png" />
+    <Resource Remove="images\themes\7.png" />
+    <Resource Remove="images\themes\8.png" />
+    <Resource Remove="images\themes\9.png" />
+    <Resource Remove="resources\font.ttf" />
+    <Resource Include="images\blocks\anvil.png" LogicalName="images/blocks/anvil.png" />
+    <Resource Include="images\blocks\cobblestone.png" LogicalName="images/blocks/cobblestone.png" />
+    <Resource Include="images\blocks\commandblock.png" LogicalName="images/blocks/commandblock.png" />
+    <Resource Include="images\blocks\egg.png" LogicalName="images/blocks/egg.png" />
+    <Resource Include="images\blocks\fabric.png" LogicalName="images/blocks/fabric.png" />
+    <Resource Include="images\blocks\goldblock.png" LogicalName="images/blocks/goldblock.png" />
+    <Resource Include="images\blocks\grass.png" LogicalName="images/blocks/grass.png" />
+    <Resource Include="images\blocks\grasspath.png" LogicalName="images/blocks/grasspath.png" />
+    <Resource Include="images\blocks\neoforge.png" LogicalName="images/blocks/neoforge.png" />
+    <Resource Include="images\blocks\optifabric.png" LogicalName="images/blocks/optifabric.png" />
+    <Resource Include="images\blocks\redstoneblock.png" LogicalName="images/blocks/redstoneblock.png" />
+    <Resource Include="images\blocks\redstonelampoff.png" LogicalName="images/blocks/redstonelampoff.png" />
+    <Resource Include="images\blocks\redstonelampon.png" LogicalName="images/blocks/redstonelampon.png" />
+    <Resource Include="images\heads\00ll00.png" LogicalName="images/heads/00ll00.png" />
+    <Resource Include="images\heads\bangbang93.png" LogicalName="images/heads/bangbang93.png" />
+    <Resource Include="images\heads\chongqing.png" LogicalName="images/heads/chongqing.png" />
+    <Resource Include="images\heads\easytier.png" LogicalName="images/heads/easytier.png" />
+    <Resource Include="images\heads\hao_tian.jpg" LogicalName="images/heads/hao_tian.jpg" />
+    <Resource Include="images\heads\herobrinexia.png" LogicalName="images/heads/herobrinexia.png" />
+    <Resource Include="images\heads\logo.png" LogicalName="images/heads/logo.png" />
+    <Resource Include="images\heads\ltcat.jpg" LogicalName="images/heads/ltcat.jpg" />
+    <Resource Include="images\heads\mcbbs.png" LogicalName="images/heads/mcbbs.png" />
+    <Resource Include="images\heads\patrick.png" LogicalName="images/heads/patrick.png" />
+    <Resource Include="images\heads\pcl2.png" LogicalName="images/heads/pcl2.png" />
+    <Resource Include="images\heads\wiki.png" LogicalName="images/heads/wiki.png" />
+    <Resource Include="images\heads\z0z0r4.png" LogicalName="images/heads/z0z0r4.png" />
+    <Resource Include="images\icon.ico" LogicalName="images/icon.ico" />
+    <Resource Include="images\icons\disabled.png" LogicalName="images/icons/disabled.png" />
+    <Resource Include="images\icons\noicon.png" LogicalName="images/icons/noicon.png" />
+    <Resource Include="images\releasetypes\alpha.png" LogicalName="images/releasetypes/alpha.png" />
+    <Resource Include="images\releasetypes\beta.png" LogicalName="images/releasetypes/beta.png" />
+    <Resource Include="images\releasetypes\release.png" LogicalName="images/releasetypes/release.png" />
+    <Resource Include="images\skins\alex.png" LogicalName="images/skins/alex.png" />
+    <Resource Include="images\skins\ari.png" LogicalName="images/skins/ari.png" />
+    <Resource Include="images\skins\efe.png" LogicalName="images/skins/efe.png" />
+    <Resource Include="images\skins\kai.png" LogicalName="images/skins/kai.png" />
+    <Resource Include="images\skins\makena.png" LogicalName="images/skins/makena.png" />
+    <Resource Include="images\skins\noor.png" LogicalName="images/skins/noor.png" />
+    <Resource Include="images\skins\steve.png" LogicalName="images/skins/steve.png" />
+    <Resource Include="images\skins\sunny.png" LogicalName="images/skins/sunny.png" />
+    <Resource Include="images\skins\zuri.png" LogicalName="images/skins/zuri.png" />
+    <Resource Include="images\themes\10.png" LogicalName="images/themes/10.png" />
+    <Resource Include="images\themes\11.png" LogicalName="images/themes/11.png" />
+    <Resource Include="images\themes\12.png" LogicalName="images/themes/12.png" />
+    <Resource Include="images\themes\13.png" LogicalName="images/themes/13.png" />
+    <Resource Include="images\themes\42.png" LogicalName="images/themes/42.png" />
+    <Resource Include="images\themes\5.png" LogicalName="images/themes/5.png" />
+    <Resource Include="images\themes\6.png" LogicalName="images/themes/6.png" />
+    <Resource Include="images\themes\7.png" LogicalName="images/themes/7.png" />
+    <Resource Include="images\themes\8.png" LogicalName="images/themes/8.png" />
+    <Resource Include="images\themes\9.png" LogicalName="images/themes/9.png" />
+    <Resource Include="resources\font.ttf" LogicalName="resources/font.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Core" />
+    <Reference Include="MeloongCore">
+      <HintPath>embedded/MeloongCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>embedded/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLCS">
+      <HintPath>embedded/PCLCS.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="NAudio">
+      <HintPath>embedded/NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="ThrottleDebounce">
+      <HintPath>embedded/ThrottleDebounce.dll</HintPath>
+    </Reference>
+    <Reference Include="MeloongCore.Wpf">
+      <HintPath>embedded/MeloongCore.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="CacheCow.Client.FileStore">
+      <HintPath>embedded/CacheCow.Client.FileStore.dll</HintPath>
+    </Reference>
+    <Reference Include="CacheCow.Client">
+      <HintPath>embedded/CacheCow.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="CacheCow.Common">
+      <HintPath>embedded/CacheCow.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Imazen.WebP">
+      <HintPath>embedded/Imazen.WebP.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
